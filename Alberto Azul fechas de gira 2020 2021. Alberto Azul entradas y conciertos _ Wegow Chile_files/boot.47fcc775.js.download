@@ -1,0 +1,6 @@
+/**
+ * Needed for prerender.io to be able to render stylesheets with styled-components
+ * @source https://github.com/styled-components/styled-components/issues/2038
+ */
+window.SC_DISABLE_SPEEDY =
+  window && window.navigator && /prerender/i.test(window.navigator.userAgent);

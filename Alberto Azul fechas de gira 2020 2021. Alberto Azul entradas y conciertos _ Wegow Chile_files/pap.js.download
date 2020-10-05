@@ -1,0 +1,11 @@
+(function(d, t) {
+  var script = d.createElement(t); script.id = 'pap_x2s6df8d'; script.async = true;
+  script.src = 'https://affiliates.wegow.com/scripts/trackjs.js';
+  script.onload = script.onreadystatechange = function() {
+    var rs = this.readyState; if (rs && (rs !== 'complete') && (rs !== 'loaded')) return;
+    window.PostAffTracker.setAccountId('default1');
+    try { window.PostAffTracker.track(); } catch (e) { }
+  }
+  var el = document.getElementsByTagName('script')[ 0 ]
+  el.parentNode.insertBefore(script, el)
+})(document, 'script')
